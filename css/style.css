@@ -105,7 +105,7 @@ a {
 }
 
 .resume {
-	text-align: justify;
+	text-align: left;
 }
 
 /* Small Screens */
@@ -125,7 +125,7 @@ a {
 	}
 
 	.grid-4 {
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1fr;
 	}
 
 	.grid-4 p {
@@ -144,6 +144,11 @@ a {
 	.container {
 		padding: 2rem 1rem;
 	}
+
+	.text {
+		display: none;
+	}
+
 }
 
 /* Landscape*/

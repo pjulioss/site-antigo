@@ -114,6 +114,12 @@ a {
 		height: 50vh;
 	}
 
+	.showcase::after {
+		filter: blur(0px);
+		-webkit-filter: blur(0px);
+	}
+
+
 	.content {
 		top: 5%;
 		margin-top: 5px;

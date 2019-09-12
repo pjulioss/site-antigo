@@ -1,5 +1,5 @@
 body {
-	background: rgba(0, 0, 0, 0.9);
+	background: #131A1E;
 	margin: 0;
 	color: #fff;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -74,14 +74,16 @@ body {
 
 .bg-light {
 	background: #f4f4f4;
-	color: #333;
+	color: #131A1E;
 }
 
 .bg-dark {
-	background: #333;
+	background: #131A1E;
 	color: #f4f4f4;
 }
-
+.skills {
+	background-color: #131A1E;
+}
 .grid-2 {
 	display: grid;
 	grid-gap: 20px;
@@ -99,11 +101,16 @@ footer p {
 a {
 	text-decoration: none;
 }
-
-.services i {
-	color: #fff;
+h3,h4 {
+	color:#009688;
 }
 
+i {
+	color: #fff;
+}
+.avatar {
+	width: 260px;
+}
 .resume {
 	text-align: left;
 }
@@ -119,6 +126,9 @@ a {
 		-webkit-filter: blur(0px);
 	}
 
+	.avatar {
+		width: 50%;
+	}
 
 	.content {
 		top: 5%;
@@ -169,4 +179,26 @@ a {
 	.content {
 		top: -15%;
 	}
+}
+
+/* seta */
+
+@keyframes moviendrew {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+#seta {
+  animation-name: moviendrew;
+	animation-duration: 0.7s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;	
+}
+
+html {
+  scroll-behavior: smooth;
 }

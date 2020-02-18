@@ -66,11 +66,13 @@ body {
 	grid-gap: 20px;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
 .grid-6 {
 	display: grid;
 	grid-gap: 20px;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+
 .center {
 	text-align: center;
 	margin: auto;
@@ -85,9 +87,11 @@ body {
 	background: #131A1E;
 	color: #f4f4f4;
 }
+
 .skills {
 	background-color: #131A1E;
 }
+
 .grid-2 {
 	display: grid;
 	grid-gap: 20px;
@@ -105,19 +109,51 @@ footer p {
 a {
 	text-decoration: none;
 }
-h3,h4 {
-	color:#009688;
+
+h3,
+h4 {
+	color: #009688;
 }
 
 i {
 	color: #fff;
 }
+
 .avatar {
 	width: 260px;
 }
+
 .resume {
 	text-align: left;
 }
+
+.repo {
+	color: #131A1E;
+	font-weight: bold;
+
+}
+
+.repo:hover {
+	text-decoration: underline;
+}
+
+/* Cards dos projetos */
+.card {
+	/* Add shadows to create the "card" effect */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+	transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+	padding: 20px 16px;
+}
+
 
 /* Small Screens */
 @media(max-width:560px) {
@@ -130,9 +166,9 @@ i {
 		-webkit-filter: blur(0px);
 	}
 
-	.avatar {
+	/* .avatar {
 		width: 50%;
-	}
+	} */
 
 	.content {
 		top: 5%;
@@ -143,9 +179,11 @@ i {
 		height: 120px;
 		width: 120px;
 	}
-	.grid-6{
+
+	.grid-6 {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
+
 	.grid-4 {
 		grid-template-columns: 1fr 1fr;
 	}
@@ -173,6 +211,10 @@ i {
 
 }
 
+.card > img {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
 /* Landscape*/
 
 @media(max-height: 500px) {
@@ -190,21 +232,22 @@ i {
 /* seta */
 
 @keyframes moviendrew {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(20px);
-  }
+	0% {
+		transform: translateY(0px);
+	}
+
+	100% {
+		transform: translateY(20px);
+	}
 }
 
 #seta {
-  animation-name: moviendrew;
+	animation-name: moviendrew;
 	animation-duration: 0.7s;
 	animation-iteration-count: infinite;
-	animation-direction: alternate;	
+	animation-direction: alternate;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
